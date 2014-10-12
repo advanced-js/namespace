@@ -1,18 +1,19 @@
-# Object Oriented Programming exercise
+# Namespace exercise
 
-## V1
+Modify [`js/namespace.js`](js/namespace.js) to create a `namespace()` function, which should take a period-delimited string of arbitrary length and makes that namespace available globally. Example usage:
 
-Make a base `SuperHero` class. Give it some properties, and actions (methods) that change those properties.
+```javascript
+function namespace(path){
+  // ...
+}
 
-1. Write a test for what it should do in [tests.js](js/tests.js).
-1. Open [index.html](index.html) to run the tests.
-1. Define the class in [super_hero.js](js/super_hero.js), and make the tests pass.
-1. Repeat from step 1.
+namespace('app.models');
+// which is synonymous to:
+//
+//   var app = {};
+//   app.models = {};
 
-## V2
+app.models.User = function(){};
+```
 
-Make at least one of the methods interact with another `SuperHero`, such as `attack()` or `giveMotivationalSpeech()`.
-
-## V3
-
-Make 2+ `SuperHero` subclasses that have two or special properties and actions, with tests.
+Get all of the [tests](js/tests.js) to pass – you can run them by opening the local copy of [`index.html`](index.html) in your browser. Focusing on passing each test in order is recommended. The String [`split()`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/split) method will come in handy.
