@@ -22,7 +22,7 @@ function namespace(path){
             lowest_level_object[ path_array[i] ] = new_object;
 
             //POINT TO NEW LOWEST LEVEL
-            lowest_level_object = new_object;
+            lowest_level_object = lowest_level_object[ path_array[i] ];
 
         }
 
