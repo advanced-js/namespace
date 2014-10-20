@@ -21,15 +21,10 @@ function namespace(path){
             //SET LOWEST LEVEL NAMESPACE TO AN EMPTY OBJECT
             lowest_level_object[ path_array[i] ] = new_object;
 
-            //POINT TO NEW LOWEST LEVEL
-            lowest_level_object = lowest_level_object[ path_array[i] ];
-
         }
 
-        else {
-            //POINT TO NEW LOWEST LEVEL
-            lowest_level_object = lowest_level_object[ path_array[i] ];
-        }
+        //POINT TO NEW LOWEST LEVEL
+        lowest_level_object = lowest_level_object[ path_array[i] ];
 
     }
 
