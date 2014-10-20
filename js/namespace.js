@@ -15,7 +15,7 @@ function namespace(path){
         //CREATE NEW EMPTY OBJECT
         var new_object = {};
 
-        //IF THE NAMESPACE IS NOT UNDEFINED, ADD NAMESPACE TO OBJECT
+        //IF THE NAMESPACE IS UNDEFINED, ADD NAMESPACE TO OBJECT
         if ( lowest_level_object[ path_array[i] ] === undefined ) {
 
             //SET LOWEST LEVEL NAMESPACE TO AN EMPTY OBJECT
