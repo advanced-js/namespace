@@ -7,7 +7,8 @@ function namespace(path){
       context = this[path[0]] = {};
     } catch(err) {
       context = this[path[0]] = {};
-    };
+    }
+    
     path.shift();
     namespace.call(context, path);
   }
